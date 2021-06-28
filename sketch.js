@@ -1,6 +1,6 @@
 let matriz = [];
-let pixelSize = 20;
-let size = 50;
+let pixelSize = 16;
+let size = 128;
 let canvasSize = pixelSize * size;
 
 let currentX;
