@@ -57,14 +57,14 @@ function draw() {
 }
 
 function mouseDragged(e) {
-    updateTileMatrix()
+    updateTileMatrix(e)
 }
 
 function mouseClicked(e) {
-  updateTileMatrix()
+  updateTileMatrix(e)
 }
 
-function updateTileMatrix() {
+function updateTileMatrix(e) {
   if (e.isTrusted) {
     let colorPicker = document.getElementById('hidden-picker');
 
