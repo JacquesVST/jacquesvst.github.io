@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <script>
+    window.addEventListener('keydown', function (e) {
+      if (e.key === 'p') {
+        let colorPicker = document.getElementById('hidden-picker');
+        colorPicker.click();
+      }
+    }, false);
+
+
+    window.addEventListener('mousemove', function (e) {
+      let colorPicker = document.getElementById('hidden-picker');
+
+      let inputPosition = { top: e.offsetY, left: e.offsetX }
+
+
+      inputPosition.top  +=
+        (e.clientY > document.documentElement.scrollHeight - 33 ? -28 : 5);
+      inputPosition.left +=
+        (e.clientX > document.documentElement.scrollWidth - 56 ? -52 : 5);
+
+      colorPicker.style.marginTop = inputPosition.top + 'px';
+      colorPicker.style.marginLeft = inputPosition.left + 'px';
+    });
+  </script>
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+  <input id="hidden-picker" type="color" value="#ff0000">
+</body>
+
+</html>
