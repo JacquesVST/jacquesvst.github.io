@@ -6,7 +6,7 @@ let canvasSize = pixelSize * size;
 let currentX;
 let currentY;
 
-let serverUrl = 'http://177.63.233.81:25565'
+let serverUrl = 'https://177.63.233.81:25565'
 
 var socket = io(serverUrl);
 
