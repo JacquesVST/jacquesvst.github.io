@@ -6,7 +6,7 @@ let canvasSize = pixelSize * size;
 let currentX;
 let currentY;
 
-let serverUrl = 'https://pricey-midi-scabiosa.glitch.me'
+let serverUrl = 'https://ginger-immense-spring.glitch.me'
 
 var socket = io(serverUrl);
 
